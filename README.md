@@ -1,6 +1,5 @@
 # :computer: Software Engenering Project
 
-## CI  
 [![Update Ubuntu 22.04](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml/badge.svg)](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml)
 
 ## :gem: Модель:
