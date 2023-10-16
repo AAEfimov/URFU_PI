@@ -6,8 +6,8 @@
 
 ## :gem: Команда:  
 
-:arrow_forward: Абдюшев Никита Юрьевич. 
-:arrow_forward: Ефимов Алексей Александрович.  
+:arrow_forward: Абдюшев Никита Юрьевич.  
+:arrow_forward: Ефимов Алексей Александрович.   
 :arrow_forward: Кулиев Эмир Шамсаддинович  
 
 ## TODO list REMOVE THIS
