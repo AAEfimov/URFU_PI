@@ -4,8 +4,8 @@
 
 ## :gem: Модели:
 
-fffiloni/img-to-music https://huggingface.co/spaces/fffiloni/img-to-music
-mikonvergence/theaTRON https://huggingface.co/spaces/mikonvergence/theaTRON
+<p>fffiloni/img-to-music https://huggingface.co/spaces/fffiloni/img-to-music</p>
+<p>mikonvergence/theaTRON https://huggingface.co/spaces/mikonvergence/theaTRON</p>
 
 ## :gem: Команда:  
 
