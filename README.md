@@ -21,7 +21,7 @@
 
 ### Настраиваем окружение (библиотеки, переменные и.т.д)
 
-1. Устанавлите библиотеку pyTelegramBotAPI
+1. Устанавите библиотеку pyTelegramBotAPI
 ```
 pip install pyTelegramBotAPI
 ```
