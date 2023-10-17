@@ -2,7 +2,10 @@
 
 [![Update Ubuntu 22.04](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml/badge.svg)](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml)
 
-## :gem: Модель:
+## :gem: Модели:
+
+fffiloni/img-to-music https://huggingface.co/spaces/fffiloni/img-to-music
+mikonvergence/theaTRON https://huggingface.co/spaces/mikonvergence/theaTRON
 
 ## :gem: Команда:  
 
