@@ -28,6 +28,4 @@ jobs:
         python -m pip install --upgrade pip
 #        pip install flake8 pytest
 #        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Launh project test
-      run: python -c "return 0"
-      
+    - name: Launh project test      
