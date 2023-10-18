@@ -15,7 +15,7 @@ def find_API(link):
 	bs = BeautifulSoup(response.text, "lxml")
 	API = bs.find_all('script')
 	regex = re.compile('--replicas/\w{1,}')
-	return link + regex.search(API[1].text).group() + '/'
+	return link + regex.search(API[1].text).group()
 
 def make_image(image_link, image_theme):
   API_link = find_API(image_model)
@@ -25,7 +25,7 @@ def make_image(image_link, image_theme):
 	  image_link,	# str (filepath on your computer (or URL) of image) in 'Image Upload' Image component
 	  image_theme,	# str  in 'Prompt:' Textbox component
 	  "bad anatomy, extra limbs, connected limbs, fused limbs, deformed hands, mutant",	# str  in 'Negative Prompt: Avoid these features in the image...' Textbox component
-	  50,	# int | float (numeric value between 1 and 100) in 'Steps' Slider component
+	  100,	# int | float (numeric value between 1 and 100) in 'Steps' Slider component
 		random.randint(-1, 2147483647),	# int | float (numeric value between -1 and 2147483647) in 'Seed' Slider component
 		True,	# bool  in 'Preserve Resolution' Checkbox component
 		fn_index=1
@@ -44,5 +44,5 @@ def make_music(image_path):
 		30,	# int | float (numeric value between 1 and 30) in 'Duration' Slider component
 		fn_index=0
   )
-  music_result = Audio(music_path)
+  music_result = Audio(music_path, autoplay = True)
   return music_path, music_result
