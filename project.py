@@ -5,17 +5,14 @@ from IPython.display import Audio
 import os
 import requests
 import re
-from bs4 import BeautifulSoup
 
 image_model = 'https://mikonvergence-theatron.hf.space/'
 music_model = 'https://fffiloni-image-to-musicgen.hf.space/'
 
 def find_API(link):
 	response = requests.get(link + '?view=api')
-	bs = BeautifulSoup(response.text, "lxml")
-	API = bs.find_all('script')
 	regex = re.compile('--replicas/\w{1,}')
-	return link + regex.search(API[1].text).group()
+	return link + regex.search(response.text).group()
 
 def make_image(image_link, image_theme):
   API_link = find_API(image_model)
