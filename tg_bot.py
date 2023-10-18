@@ -5,6 +5,7 @@ import random
 from PIL import Image
 from gtts import gTTS
 from gradio_client import Client
+from project import *
 
 def say_it(text, chat_id):
       sound_file = f'output_{str(chat_id)}.wav'
@@ -12,31 +13,20 @@ def say_it(text, chat_id):
       tts.save(sound_file)
       return sound_file
 
-def make_image(image_file, text, user_id):
+def prepare_image(image_file, text, user_id):
 
     image = Image.open(image_file).convert('RGB')
     image_name = f'initial_{user_id}.jpg'
     image.save(image_name)
 
-    client = Client("https://mikonvergence-theatron.hf.space/--replicas/mg4kc/")
-    result = client.predict(
-		image_name,	# str (filepath on your computer (or URL) of image) in 'Webcam' Image component
-		image_name,	# str (filepath on your computer (or URL) of image) in 'Image Upload' Image component
-		text,	# str  in 'Prompt:' Textbox component
-		"",	# str  in 'Negative Prompt: Avoid these features in the image...' Textbox component
-		25,	# int | float (numeric value between 1 and 100) in 'Steps' Slider component
-		random.randint(-1, 2147483647),	# int | float (numeric value between -1 and 2147483647) in 'Seed' Slider component
-		True,	# bool  in 'Preserve Resolution' Checkbox component
-		fn_index=1
-                )
+    return make_image(image_file, text)
 
-    image_path = tuple(os.walk(result))[1][0] + '/image.png'
-    print(image_path)
-    return image_path
+def prepare_music(image_file):
+    image = Image.open(image_file).convert('RGB')
+    image_name = f'initial_{user_id}.jpg'
+    image.save(image_name)
 
-def make_music(text, chat_id):
-    pass
-
+    return make_music(image_file)
 
 users_dict_text = {}
 users_dict_pic = {}
@@ -47,7 +37,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 def generate_all(message, img_file_name, text):
     try:
         chat_id = message.chat.id
-        ret_file = make_image(img_file_name, text, chat_id)
+        ret_file, img_result = prepare_image(img_file_name, text, message.from_user.id)
         img_ret = open(ret_file, "rb")
         bot.send_photo(chat_id, img_ret)
     except ValueError:

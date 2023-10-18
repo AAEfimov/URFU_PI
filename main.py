@@ -1,4 +1,4 @@
-import project
+from  project import *
 
 image_theme = 'village'
 image_link = r'https://gdb.rferl.org/02be0000-0aff-0242-be17-08da2a16ec33_cx0_cy9_cw0_w1200_r1.jpg'

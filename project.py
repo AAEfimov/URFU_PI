@@ -5,8 +5,11 @@ from PIL import Image
 from IPython.display import Audio
 import os
 
+IMAGE_API_URL=os.environ.get('IMAGE_API_URL')
+MUSIC_API_URL=os.environ.get('MUSIC_API_URL')
+
 def make_image(image_link, image_theme):
-  client = Client("https://mikonvergence-theatron.hf.space/--replicas/mg4kc/")
+  client = Client(IMAGE_API_URL)
   result = client.predict(
 	  image_link,	# str (filepath on your computer (or URL) of image) in 'Webcam' Image component
 	  image_link,	# str (filepath on your computer (or URL) of image) in 'Image Upload' Image component
@@ -23,7 +26,7 @@ def make_image(image_link, image_theme):
 
 
 def make_music(image_path):
-  client = Client("https://fffiloni-image-to-musicgen.hf.space/--replicas/tp92v/")
+  client = Client(MUSIC_API_URL)
   music_path = client.predict(
 		image_path,	# str (filepath on your computer (or URL) of image) in 'Input Image' Image component
 		"",	# str (filepath on your computer (or URL) of file) in 'Melody Condition (optional)' Audio component
