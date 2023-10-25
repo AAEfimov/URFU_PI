@@ -6,6 +6,9 @@
 также генерирует по полученной картинке музыку!  
 Попробуйте, будет весело
 
+Пример работы приложения  
+![image](Img/example.png)
+
 ## :gem: Модели:
 
 <p>fffiloni/img-to-music https://huggingface.co/spaces/fffiloni/img-to-music</p>
