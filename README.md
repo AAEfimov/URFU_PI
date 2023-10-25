@@ -9,6 +9,17 @@
 Пример работы приложения  
 ![image](Img/example.png)
 
+## :gem: How To
+
+Как запустить приложение  
+1) для начала Вам необходимо установить streamlit
+```Python
+pip install streamlit
+```
+2) Запустить приложение можно следующей командой
+```Python
+streamlit run streamlit_api.py 
+```
 ## :gem: Модели:
 
 <p>fffiloni/img-to-music https://huggingface.co/spaces/fffiloni/img-to-music</p>
