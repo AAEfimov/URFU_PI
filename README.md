@@ -2,6 +2,10 @@
 
 [![Update Ubuntu 22.04](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml/badge.svg)](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml)
 
+Наш проект представляет web приложение и TG бот для модификации фотографий, согласно описанию,  
+также генерирует по полученной картинке музыку!  
+Попробуйте, будет весело
+
 ## :gem: Модели:
 
 <p>fffiloni/img-to-music https://huggingface.co/spaces/fffiloni/img-to-music</p>
