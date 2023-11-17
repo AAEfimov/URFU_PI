@@ -6,8 +6,11 @@
 также генерирует по полученной картинке музыку!  
 Попробуйте, будет весело
 
-Пример работы приложения  
-![image](Img/example.png)
+> May the Force be with you
+
+Изображение  | Результат работы (on The Moon)
+---------|:-------:
+![image](Img/from.jpg)  |   ![image](Img/example.png)
 
 ## :gem: How To
 
