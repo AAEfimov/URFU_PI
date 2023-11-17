@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Program Engineering</title>
+<style>
+td {padding:5px;}
+button{margin: 5px;}
+</style>
+</head>
+<body>
+    <h2>Генерируем изображение</h2>
+    <div>
+        <input type="hidden" id="ImgId" />
+        <p>
+            Изображение:<br/>
+            <input id="img_url" />
+        </p>
+        <p>
+            Текст:<br />
+            <input id="itext" type="string" />
+        </p>
+         <p>
+            <button id="generateBtn">Генерировать</button>
+            <button id="resetBtn">Сбросить</button>
+        </p>
+    </div>
+    <table>
+	    <thead><tr><th>Изображение</th><th>API UUID</th><th>Текст</th><th></th></tr></thead>
+        <tbody>
+        </tbody>
+    </table>
+  
+    <script>
+	// Получение всех изображений на сервере
+        async function getImages() {
+            // отправляет запрос и получаем ответ
+            const response = await fetch("/api/images", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            // если запрос прошел нормально
+            if (response.ok === true) {
+                // получаем данные
+                const images = await response.json();
+                const rows = document.querySelector("tbody");
+                // добавляем полученные элементы в таблицу
+                images.forEach(image => rows.append(row(image)));
+            }
+        }
+
+        // Удаление изображения
+        async function deleteImage(id) {
+            const response = await fetch(`/api/images/delete/${id}`, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const image = await response.json();
+                document.querySelector(`tr[data-rowid='${image.img_id}']`).remove();
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+
+	// создание строки для таблицы
+        function row(img) {
+
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-rowid", img.img_id);
+
+             // const imageTd = document.createElement("td");
+	     // const imgEl = document.createElement('img');
+	     // imgEl.src = img.pwd;
+	     // imgEl.width = "100";
+	     // imgEl.height = "100";
+             // imageTd.append(imgEl)
+             // tr.append(imageTd);
+	
+
+             var a = document.createElement('a');
+             var linkText = document.createTextNode("Image link");
+             a.appendChild(linkText);
+             a.title = "image link";
+             a.href = "/api/images/get/" + img.img_id;
+	     tr.append(a);
+
+            const uuidTd = document.createElement("td");
+            uuidTd.append(img.img_id);
+            tr.append(uuidTd);
+
+            const textTd = document.createElement("td");
+            textTd.append(img.text);
+
+            tr.append(textTd);
+
+	    const linksTd = document.createElement("td");
+
+            const removeLink = document.createElement("button"); 
+            removeLink.append("Удалить");
+            removeLink.addEventListener("click", async () => await deleteImage(img.img_id));
+  
+            linksTd.append(removeLink);
+	
+	    tr.append(linksTd)
+
+            return tr;
+        }
+
+        // Генерация изображения
+        async function generateImage(img_url, itext) {
+  
+            const response = await fetch("api/generate", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    img: img_url,
+                    text: itext
+                })
+            });
+            if (response.ok === true) {
+                const img = await response.json();
+                document.querySelector("tbody").append(row(img));
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+
+        // сброс данных формы после отправки
+        function reset() {
+            document.getElementById("ImgId").value = 
+            document.getElementById("img_url").value = 
+            document.getElementById("itext").value = "";
+        }
+
+        // сброс значений формы
+        document.getElementById("resetBtn").addEventListener("click", () =>  reset());
+  
+        // отправка формы
+        document.getElementById("generateBtn").addEventListener("click", async () => {
+             
+            const id = document.getElementById("ImgId").value;
+            const img = document.getElementById("img_url").value;
+            const text = document.getElementById("itext").value;
+
+            await generateImage(img, text);
+
+            reset();
+        });
+	// Load images
+        getImages() 
+    </script>
+</body>
+</html>
