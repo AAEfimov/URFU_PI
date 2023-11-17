@@ -27,6 +27,8 @@ streamlit run streamlit_api.py
 ```Python
 uvicorn fastapi_ex:pe_urfu --reload
 ```
+:arrow_right: [Список поддерживаемых запросов](fastapi_doc.md)  
+
 4) Запустить TG bot можно седующий командой  
     * Найдите @botfather в Telegram  
     * Начните разговор с BotFather, нажав кнопку «Start».  
