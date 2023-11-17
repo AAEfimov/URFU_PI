@@ -29,6 +29,10 @@ uvicorn fastapi_ex:pe_urfu --reload
 ```
 :arrow_right: [Список поддерживаемых запросов](fastapi_doc.md)  
 
+для удобства использования API из web была добавлена JS форма взаимодействия с ним
+
+![image](Img/js_form.png)  
+
 4) Запустить TG bot можно седующий командой  
     * Найдите @botfather в Telegram  
     * Начните разговор с BotFather, нажав кнопку «Start».  
