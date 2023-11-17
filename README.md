@@ -10,7 +10,7 @@
 
 Изображение  | Результат работы (on The Moon)
 ---------|:-------:
-![image](Img/from.jpg)  |   ![image](Img/example.png)
+![image](Img/from.jpg)  |   ![image](Img/result.png)
 
 ## :gem: How To
 
