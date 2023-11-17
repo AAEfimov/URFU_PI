@@ -12,13 +12,27 @@
 ## :gem: How To
 
 Как запустить приложение  
-1) для начала Вам необходимо установить streamlit
+1) для начала Вам необходимо установить все библиотека
 ```Python
-pip install streamlit
+pip install -r requirements.txt
 ```
-2) Запустить приложение можно следующей командой
+2) Запустить streamlit приложение можно следующей командой
 ```Python
 streamlit run streamlit_api.py 
+```
+3) Запустить FastApi приложение можно следующей командой
+```Python
+uvicorn fastapi_ex:pe_urfu --reload
+```
+4) Запустить TG bot можно седующий командой  
+    * Найдите @botfather в Telegram  
+    * Начните разговор с BotFather, нажав кнопку «Start».  
+    * Введите /newbot и следуйте инструкциям, чтобы настроить нового бота. BotFather
+   предоставит вам токен, который вы будете использовать для аутентификации своего бота и предоставления ему доступа к API Telegram.  
+
+```Python
+echo 'export BOT_TOKEN=your-bot-token-here' > .env
+python3 tg_bot.py
 ```
 ## :gem: Модели:
 
@@ -30,30 +44,6 @@ streamlit run streamlit_api.py
 :arrow_forward: Абдюшев Никита Юрьевич (РИМ-130906),  
 :arrow_forward: Ефимов Алексей Александрович (РИМ-130907),  
 :arrow_forward: Кулиев Эмир Шамсаддинович  (РИМ-130908).
-
-## :gem: How to use Telegram bot
-
-### для запуска бота вам понадобится токен
-
-1. Найдите @botfather в Telegram
-2. Начните разговор с BotFather, нажав кнопку «Start».
-3. Введите /newbot и следуйте инструкциям, чтобы настроить нового бота. BotFather
-предоставит вам токен, который вы будете использовать для аутентификации своего бота и предоставления ему доступа к API Telegram.
-
-### Настраиваем окружение (библиотеки, переменные и.т.д)
-
-1. Устанавите библиотеку pyTelegramBotAPI
-```
-pip install pyTelegramBotAPI
-```
-3. Откройте свой любимый редактор кода и создайте файл .env для хранения вашего токена, как показано ниже.
-```
-export BOT_TOKEN=your-bot-token-here
-```
-3. Можете запускать бот
-```
-python3 tg_bot.py
-```
 
 ## TODO list REMOVE THIS
 
