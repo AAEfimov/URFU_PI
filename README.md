@@ -13,9 +13,9 @@
 ![image](Img/from.jpg)  |   ![image](Img/result.png)  
 
 ## :gem: Попробавить streamlit приложение можно по адресу
-```
-[urfuproject.streamlit.app](https://urfuproject.streamlit.app/)
-```
+
+#### [urfuproject.streamlit.app](https://urfuproject.streamlit.app/)
+
 
 ## :gem: How To
 
