@@ -14,7 +14,7 @@
 
 ## :gem: Попробавить streamlit приложение можно по адресу
 ```
-https://urfuproject-gcdddzixqfaphbc8rqrxd8.streamlit.app/
+[https://urfuproject.streamlit.app/](https://urfuproject.streamlit.app/)
 ```
 
 ## :gem: How To
