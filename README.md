@@ -10,7 +10,12 @@
 
 Изображение  | Результат работы (on The Moon)
 ---------|:-------:
-![image](Img/from.jpg)  |   ![image](Img/result.png)
+![image](Img/from.jpg)  |   ![image](Img/result.png)  
+
+## :gem: Попробавить streamlit приложение можно по адресу
+```
+https://urfuproject-gcdddzixqfaphbc8rqrxd8.streamlit.app/
+```
 
 ## :gem: How To
 
