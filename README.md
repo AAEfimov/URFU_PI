@@ -12,10 +12,13 @@
 ---------|:-------:
 ![image](Img/from.jpg)  |   ![image](Img/result.png)  
 
-## :gem: Попробавить streamlit приложение можно по адресу
+## :gem: streamlit приложение доступно
 
 #### [urfuproject.streamlit.app](https://urfuproject.streamlit.app/)
 
+## :gem: FastAPI приложение доступно
+
+#### [mlskill.ru](https://mlskill.ru:8000/)
 
 ## :gem: How To
 
