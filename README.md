@@ -18,7 +18,7 @@
 
 ## :gem: FastAPI приложение доступно
 
-#### [mlskill.ru](https://mlskill.ru:8000/)
+#### [mlskill.ru](http://mlskill.ru:8000/)
 
 ## :gem: How To
 
