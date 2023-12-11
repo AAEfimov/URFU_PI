@@ -8,12 +8,15 @@ from project import *
 pe_urfu = FastAPI()
 
 class pe_image():
-    def __init__(self, pwd, text):
+    def __init__(self, pwd, text, uuid = None):
         self.pwd = pwd
         self.text = text
-        self.img_id = str(uuid.uuid4())
+        if uuid == None:
+            self.img_id = str(uuid.uuid4())
+        else:
+            self.img_id = str(uuid)
 
-img_list = []
+img_list = [pe_image("Img/result.png", "On the moon", "1")]
 
 def find_img(img_id):
     for i in img_list:
