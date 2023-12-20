@@ -12,6 +12,10 @@
 ---------|:-------:
 ![image](Img/from.jpg)  |   ![image](Img/result.png)  
 
+## :gem: Source code documentation
+
+[Source code doc](https://htmlpreview.github.io/?https://github.com/AAEfimov/URFU_PI/blob/main/html/URFU_PI/index.html)  
+
 ## :gem: streamlit приложение доступно
 
 #### [urfuproject.streamlit.app](https://urfuproject.streamlit.app/)
