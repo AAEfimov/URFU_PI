@@ -2,8 +2,9 @@
 
 [![Update Ubuntu 22.04](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml/badge.svg)](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml)
 
-Наш проект представляет web приложение и TG бот для модификации фотографий, согласно описанию,  
-также генерирует по полученной картинке музыку!  
+Наш проект представляет streamlit web приложение, fastapi и TG бот для генерации забавных  
+изображений по фотографии,  согласно описанию.
+Также генерирует по полученной картинке музыку!  
 Попробуйте, будет весело
 
 > May the Force be with you
