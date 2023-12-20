@@ -12,7 +12,9 @@
 ---------|:-------:
 ![image](Img/from.jpg)  |   ![image](Img/result.png)  
 
-#### Добавлен бета релиз. тэг v0.1
+## :gem: Релизы
+
+[Release list](https://github.com/AAEfimov/URFU_PI/releases)
 
 ## :gem: Source code documentation
 
