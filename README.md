@@ -12,6 +12,8 @@
 ---------|:-------:
 ![image](Img/from.jpg)  |   ![image](Img/result.png)  
 
+#### Добавлен бета релиз. тэг v0.1
+
 ## :gem: Source code documentation
 
 [Source code doc](https://htmlpreview.github.io/?https://github.com/AAEfimov/URFU_PI/blob/main/html/URFU_PI/index.html)  
