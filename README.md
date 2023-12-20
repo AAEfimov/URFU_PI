@@ -66,7 +66,7 @@ python3 tg_bot.py
 :arrow_forward: Ефимов Алексей Александрович (РИМ-130907),  
 :arrow_forward: Кулиев Эмир Шамсаддинович  (РИМ-130908).
 
-## TODO list REMOVE THIS
+## Useful links
 
 #### markdown
 links https://gist.github.com/rxaviers/7360908  
