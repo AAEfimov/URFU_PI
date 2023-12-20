@@ -67,23 +67,10 @@ python3 tg_bot.py
 #### markdown
 links https://gist.github.com/rxaviers/7360908  
 https://www.markdownguide.org/basic-syntax/  
-  
-#### Задание:  
-:white_check_mark:   1. Сформируйте команду из 3-4 человек.  
-:white_check_mark:   2. Создайте репозиторий на GitHub, который будет использоваться для командной разработки приложения.  
-:white_check_mark:   3. Изучите возможности готовых библиотек машинного обучения.  
-:white_check_mark:   4. Сформулируйте задачу, которую вы хотите решить с помощью машинного обучения.  
-:white_check_mark:   5. Реализуйте решение выбранной вами задачи в коде с использованием готовой библиотеки машинного обучения.  
-:white_check_mark:   6. Отправьте реализованное решение в репозиторий на GitHub.  
-:x:   7. Оформите документацию на ваше решение в репозитории.  
-:white_check_mark:   8. Отправьте ссылку на созданный репозиторий GitHub на платформу для проверки.  
 
-Рекомендуется использовать одну из следующих библиотек машинного обучения:  
-Hugging Face (https://huggingface.co/),  
-TensorFlow Hub (https://www.tensorflow.org/hub),  
-PyTorch Hub (https://pytorch.org/hub/),  
-Keras Applications (https://keras.io/api/applications/).  
-  
-Пример репозитория – https://github.com/sozykin/ml_sentiment  
+### documentation generate   
 
-
+```
+pip3 install pdoc3
+pdoc --html .
+``` 
