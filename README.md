@@ -21,13 +21,11 @@
 
 [Source code doc](https://htmlpreview.github.io/?https://github.com/AAEfimov/URFU_PI/blob/main/html/URFU_PI/index.html)  
 
-## :gem: streamlit приложение доступно
+## :gem: Examples
 
-#### [urfuproject.streamlit.app](https://urfuproject.streamlit.app/)
-
-## :gem: FastAPI приложение доступно
-
-#### [mlskill.ru](http://mlskill.ru:8000/)
+#### [urfuproject.streamlit.app](https://urfuproject.streamlit.app/)  
+#### [mlskill.ru (fast api)](http://mlskill.ru:8000/)  
+#### [TG bot](https://t.me/PE_blalba_bot)
 
 ## :gem: How To
 
