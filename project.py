@@ -15,7 +15,6 @@ import requests
 import re
 
 image_model = 'https://mikonvergence-theatron.hf.space/'
-music_model = 'https://fffiloni-image-to-musicgen.hf.space/'
 
 def find_API(link):
     """
@@ -48,21 +47,3 @@ def make_image(image_link, image_theme):
     image_path = tuple(os.walk(result))[1][0] + '/image.png'
     image_result = Image.open(image_path)
     return image_path, image_result
-
-
-def make_music(image_path):
-    """
-    Generate music by image.
-    Using huggingface ML model API
-    image_path -- source image
-    """
-    API_link = find_API(music_model)
-    client = Client(API_link)
-    music_path = client.predict(
-		image_path,	# str (filepath on your computer (or URL) of image) in 'Input Image' Image component
-		"",	# str (filepath on your computer (or URL) of file) in 'Melody Condition (optional)' Audio component
-		30,	# int | float (numeric value between 1 and 30) in 'Duration' Slider component
-		fn_index=0
-  )
-    music_result = Audio(music_path, autoplay = True)
-    return music_path, music_result
