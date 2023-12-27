@@ -60,7 +60,7 @@ python3 tg_bot.py
 ```
 ## :gem: Модели:
 
-<p>fffiloni/img-to-music https://huggingface.co/spaces/fffiloni/img-to-music</p>
+<p>fffiloni/img-to-music https://huggingface.co/spaces/fffiloni/img-to-music</p> (больше не работает)
 <p>mikonvergence/theaTRON https://huggingface.co/spaces/mikonvergence/theaTRON</p>
 
 ## :gem: Команда:  
