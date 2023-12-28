@@ -2,8 +2,8 @@
 
 [![Update Ubuntu 22.04](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml/badge.svg)](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/AAEfimov/URFU_PI.svg)](http://isitmaintained.com/project/AAEfimov/URFU_PI "Percentage of issues still open")
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/AAEfimov/URFU_PI.svg)](http://isitmaintained.com/project/AAEfimov/URFU_PI "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/AAEfimov/URFU_PI.svg)](https://github.com/AAEfimov/URFU_PI/issues)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/AAEfimov/URFU_PI.svg)](https://github.com/AAEfimov/URFU_PI/issues)
 
 Наш проект представляет streamlit web приложение, fastapi и TG бот для генерации забавных  
 изображений по фотографии,  согласно описанию.
