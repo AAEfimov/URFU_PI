@@ -20,11 +20,14 @@ class pe_image():
     Class for accumulate generated image information and provide access to new images
     """
     def __init__(self, pwd, text, uid = None):
-        self.pwd = pwd
-        self.text = text
-        if uid == None:
+    # Initialize the class with the provided parameters: pwd (password), text, and optional uid (unique identifier)
+        self.pwd = pwd  # Set the pwd attribute to the provided password
+        self.text = text  # Set the text attribute to the provided text
+        if uid == None:  # Check if the uid parameter is not provided
+        # Generate a new unique identifier using uuid if uid is not provided
             self.img_id = str(uuid.uuid4())
         else:
+        # Use the provided uid as the unique identifier
             self.img_id = str(uid)
 
 img_list = [pe_image("Img/result.png", "On the moon", "1")]
