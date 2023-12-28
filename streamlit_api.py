@@ -19,14 +19,20 @@ def load_image():
     """
     uploaded_file = sl.file_uploader(
             label='Выберите изобрадение')
+    # Check if an image file is uploaded
     if uploaded_file is not None:
+         # Get the image data
         image_data = uploaded_file.getvalue()
         
+        # Open the image using the BytesIO and Image modules
         img = Image.open(io.BytesIO(image_data))
+        # Save the uploaded image with its original name
         img.save(uploaded_file.name)
 
+        # Return the name of the uploaded image file
         return  uploaded_file.name
     else:
+        # If no image is uploaded, return None
         return None
 
 
