@@ -44,6 +44,7 @@ def make_image(image_link, image_theme):
 		True,	# bool  in 'Preserve Resolution' Checkbox component
 		fn_index=1
   )
-    image_path = tuple(os.walk(result))[1][0] + '/image.png'
-    image_result = Image.open(image_path)
-    return image_path, image_result
+    image_path = tuple(os.walk(result))[1][0] + '/image.png'	# Get the path to the image
+    image_result = Image.open(image_path)	# Opening an image
+    return image_path, image_result	# Return the path to the image and the image itself
+
