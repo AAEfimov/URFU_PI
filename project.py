@@ -21,9 +21,9 @@ def find_API(link):
     Find API link from web page
     link -- URL address uf model
     """
-    response = requests.get(link + '?view=api')
-    regex = re.compile('--replicas/\w{1,}')
-    return link + regex.search(response.text).group()
+    response = requests.get(link + '?view=api')	# Make a get request to the provided link with the view=api query parameter
+    regex = re.compile('--replicas/\w{1,}')	# Define a regular expression pattern to search for the API link in the response text
+    return link + regex.search(response.text).group()	# Return the original link concatenated with the matched API link
 
 def make_image(image_link, image_theme):	# Feature to create image based on image link and image topic
     """
