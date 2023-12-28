@@ -42,12 +42,7 @@ def find_img(img_id):
             return i
     return None
 
-@pe_urfu.get("/")
-async def root():
-    """
-    Fast api root page
-    """
-    return FileResponse("public/index.html")
+
 
 @pe_urfu.get("/api")
 async def root_api():
