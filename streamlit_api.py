@@ -10,7 +10,8 @@ import io
 import streamlit as sl
 from PIL import Image
 from project import *
-
+#from tqdm import tqdm
+#import time
 
 def load_image():
     """
@@ -59,5 +60,17 @@ button = sl.button("make magic!", on_click=make_magic)
 Streamlit button.
 after click, run calback and make_magic
 """
+"""
+# Information about the generation process
+def generate_images(image_list):
+    results = []
+    for image in tqdm(image_list, desc='Processing images', unit='image'):
+        # Code for image processing
+        time.sleep(0.1)  # To demonstrate the delay in processing each image
+        results.append(image)  # Here you can add the processed image to the list of results
+    return results
 
-
+# Usage example
+image_list = [image1, image2, image3]  # Replace with your list of images
+processed_images = generate_images(image_list)
+"""
