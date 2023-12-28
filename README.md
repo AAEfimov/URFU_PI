@@ -1,6 +1,7 @@
 # :computer: Software Engenering Project
 
 [![Update Ubuntu 22.04](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml/badge.svg)](https://github.com/AAEfimov/URFU_PI/actions/workflows/python-app.yml)
+[![docs](https://img.shields.io/badge/docs-latest-blue)](https://htmlpreview.github.io/?https://github.com/AAEfimov/URFU_PI/blob/main/html/URFU_PI/index.html)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/AAEfimov/URFU_PI.svg)](https://github.com/AAEfimov/URFU_PI/issues)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/AAEfimov/URFU_PI.svg)](https://github.com/AAEfimov/URFU_PI/issues)
