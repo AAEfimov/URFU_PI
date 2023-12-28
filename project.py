@@ -25,15 +25,15 @@ def find_API(link):
     regex = re.compile('--replicas/\w{1,}')
     return link + regex.search(response.text).group()
 
-def make_image(image_link, image_theme):
+def make_image(image_link, image_theme):	# Feature to create image based on image link and image topic
     """
     Send request to ML model placed on hugging face
     and get generated image
     image_link -- link for sorce image
     image_theme -- discribe what we shoul do
     """
-    API_link = find_API(image_model)
-    client = Client(API_link)
+    API_link = find_API(image_model)	# Find API for image processing based on image model
+    client = Client(API_link)	# Initializing the client to work with the API
     result = client.predict(
 	  image_link,	# str (filepath on your computer (or URL) of image) in 'Webcam' Image component
 	  image_link,	# str (filepath on your computer (or URL) of image) in 'Image Upload' Image component
