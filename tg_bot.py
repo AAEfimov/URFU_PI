@@ -7,15 +7,12 @@ __author__ = "UrFU team"
 __copyright__ = "Copyright 2023, Planet Earth"
 
 import os
-import random
-
-import requests
 import telebot
-from gradio_client import Client
+
 from gtts import gTTS
 from PIL import Image
 
-from project import *
+from project import make_image, make_music
 
 
 def say_it(text, chat_id):
@@ -100,7 +97,7 @@ def echo_all(message):
         del users_dict_pic[message.from_user.id]
         del users_dict_text[message.from_user.id]
     else:
-        bot.reply_to(message, f"Text to Generation: {message.text} Now upload picture")
+        bot.reply_to(message, "Text to Generation: {message.text} Now upload picture")
 
 
 # Handles all sent documents and audio files
@@ -114,7 +111,7 @@ def handle_photo(message):
     print(f"FILE_ID {fileID}")
 
     downloaded_file = bot.download_file(fileID.file_path)
-    img_file_name = f"photo{message.chat.id}.jpg"
+    img_file_name = "photo{message.chat.id}.jpg"
 
     with open(img_file_name, "wb") as new_file:
         new_file.write(downloaded_file)
@@ -130,7 +127,7 @@ def handle_photo(message):
         del users_dict_pic[message.from_user.id]
         del users_dict_text[message.from_user.id]
     else:
-        bot.reply_to(message, f"Image added, Now add text")
+        bot.reply_to(message, "Image added, Now add text")
 
 
 if __name__ == "__main__":
