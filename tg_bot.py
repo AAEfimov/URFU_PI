@@ -38,12 +38,12 @@ def prepare_image(image_file, text, user_id):
     return make_image(image_file, text)
 
 
-def prepare_music(image_file):
+def prepare_music(image_file, user_id):
     """
     Support function to prepare music to  TG chat
     """
     image = Image.open(image_file).convert("RGB")
-    image_name = f"initial_{user_id}.jpg"
+    image_name = "initial_{}.jpg".format(user_id)
     image.save(image_name)
 
     return make_music(image_file)
