@@ -6,11 +6,13 @@ Fastapi functions
 __author__ = "UrFU team"
 __copyright__ = "Copyright 2023, Planet Earth"
 
-import uuid
 import os
-from fastapi.responses import JSONResponse, FileResponse
-from fastapi import FastAPI, Body, status
+import uuid
+
 from bs4 import BeautifulSoup
+from fastapi import Body, FastAPI, status
+from fastapi.responses import FileResponse, JSONResponse
+
 from project import *
 
 pe_urfu = FastAPI()

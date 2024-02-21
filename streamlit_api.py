@@ -7,8 +7,10 @@ __author__ = "UrFU team"
 __copyright__ = "Copyright 2023, Planet Earth"
 
 import io
+
 import streamlit as sl
 from PIL import Image
+
 from project import *
 
 # from tqdm import tqdm

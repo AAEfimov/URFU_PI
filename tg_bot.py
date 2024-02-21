@@ -7,12 +7,14 @@ __author__ = "UrFU team"
 __copyright__ = "Copyright 2023, Planet Earth"
 
 import os
-import telebot
-import requests
 import random
-from PIL import Image
-from gtts import gTTS
+
+import requests
+import telebot
 from gradio_client import Client
+from gtts import gTTS
+from PIL import Image
+
 from project import *
 
 

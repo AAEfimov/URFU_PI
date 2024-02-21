@@ -6,13 +6,14 @@ main functional to communication with ML model
 __author__ = "UrFU team"
 __copyright__ = "Copyright 2023, Planet Earth"
 
-from gradio_client import Client
-import random
-from PIL import Image
-from IPython.display import Audio
 import os
-import requests
+import random
 import re
+
+import requests
+from gradio_client import Client
+from IPython.display import Audio
+from PIL import Image
 
 image_model = "https://mikonvergence-theatron.hf.space/"
 
